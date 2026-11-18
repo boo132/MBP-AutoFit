@@ -1,0 +1,9 @@
+import org.python.util.PythonInterpreter;
+
+PythonInterpreter autofit = new PythonInterpreter();
+autofit.set("mbp", MBP);
+autofit.set("mode", "preview");
+autofit.set("timeout_seconds", "600");
+autofit.set("toxe_nm", ""); // Empty uses the active model's TOXE.
+autofit.set("rollback_report", "");
+autofit.execfile("F:/Codex/BSIM4_AutoFit/scripts/mbp_autofit.py");
